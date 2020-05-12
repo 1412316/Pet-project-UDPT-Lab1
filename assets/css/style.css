@@ -1,78 +1,82 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-.container {
-  display: grid;    
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 350px 50px;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.header {
-  grid-column: span 12;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.aside {
-  grid-column: span 2;
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
 }
 
-.main {
-  grid-column: span 10;
+.nav-brand{
+  font-size: 1.5rem;
+  margin: .5rem;
 }
 
-.footer {
-  grid-column: span 12;
+.nav-bar {
+  height: 100%;
 }
 
 .nav__list {
   display: flex;
-  /*flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;*/
-  list-style-type: none;
-  background-color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__item {
-  background-color: #000;
-  text-align: center;
-  font-size: 16px;
-  padding: 15px 15px;
-  white-space: nowrap;
+  list-style: none;
 }
 
-.nav__link:hover {
-    color: yellow;
+.nav__item:hover {
+  background-color: #555;
 }
 
 .nav__link {
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1rem;
 }
 
-.nav-toggle {
+.hamburger {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-.nav__btn:hover {
-    text-decoration: none;
+.hamburger-bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.nav__btn {
-    padding: 5px 5px;
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: teal;
+  color: white;
 }
 
-.nav__link--btn {
-    border: 1px solid;
+.menu__item {
+  list-style: none;
 }
 
-.nav__link--btn--secondary {
-    background-color: darkblue;
-}
-
-.nav__link--btn--secondary:hover {
-    color: #f1f1f1;
-    background-color: blue;
+.menu__link {
+  display: block;
+  color: white;
+  padding: 1rem;
 }

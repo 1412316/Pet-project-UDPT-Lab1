@@ -1,7 +1,44 @@
-@media screen and (max-width: 992px) {
+/* Chuyen doi lap trinh cho mobile truoc */
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-bar {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav__list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__item {
+        text-align: center;
+    }
+
+    .nav__link {
+        padding: .5rem 1rem;
+    }
+
 
 }
-  
-@media screen and (max-width: 768px) {
+}
+
+/* Mobile */
+/* Without button navbar */
+@media only screen and (max-width: 768px) {
 
 }
