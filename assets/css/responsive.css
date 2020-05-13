@@ -7,7 +7,7 @@
         align-items: flex-start;
     }
 
-    .hamburger {
+    .nav__hamburger {
         display: flex;
     }
 
@@ -32,13 +32,45 @@
     .nav__link {
         padding: .5rem 1rem;
     }
-
-
-}
 }
 
 /* Mobile */
 /* Without button navbar */
 @media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .menu-expand {
+        display: block;
+        width: 100%;
+        color: white;
+        background-color: #006666;
+        padding: 5px;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+
+    .menu__block {
+        display: none;
+    }
+
+    .menu__block.active {
+        display: flex;
+        width: 100%;
+        flex-direction: column;        
+    }
+
+    .menu__list {
+        margin: 0;
+    }
+
+    .menu__item {
+        text-align: center;
+    }
+
+    .menu__link {
+        padding: .5rem 1rem;
+    }
 }
