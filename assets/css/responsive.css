@@ -73,4 +73,14 @@
     .menu__link {
         padding: .5rem 1rem;
     }
+
+    /* About page */
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 5px 0;
+    }
 }
